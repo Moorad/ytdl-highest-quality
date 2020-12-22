@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download video</title>
+</head>
+
+<body>
+
+	<style>
+		body, html {
+			width: 100vw;
+			height: 100vh;
+			margin: 0;
+		}
+
+		#container {
+			width:100%;
+			margin: auto;
+			text-align: center;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		#url {
+			border: 2px solid black;
+			font-size: 24px;
+			padding: 3px 6px;
+			width: 30%;
+			border-radius: 5px;
+		}
+
+		#download {
+			border: 2px solid black;
+			font-size: 24px;
+			padding: 3px 6px;
+			border-radius: 5px;
+		}
+	</style>
+	
+	<div id="container">
+		<input id='url' placeholder='Paste a youtube link to download!'>
+		<button id='download' download='video.mp4' >download</button>
+	</div>
+    <script src='http://danml.com/js/download.js'></script>
+
+    <script>
+        const downloadButton = document.getElementById('download');
+		const downloadInput = document.getElementById('url');
+
+        downloadButton.addEventListener('click', () => {
+           window.open('/downloadmp4?url=' + downloadInput.value)
+        });
+	</script>
+</body>
+
+</html>

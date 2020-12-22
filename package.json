@@ -1,0 +1,17 @@
+{
+  "name": "ytdl-highest-quality",
+  "version": "1.0.0",
+  "description": "1. Install [git](https://git-scm.com/) and clone this respiratory by firstly [navigating to your desired directory using cmd](https://riptutorial.com/cmd/example/8646/navigating-in-cmd) and running the following:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Moorad",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "ffmpeg-static": "^4.2.7",
+    "ytdl-core": "^4.2.1"
+  }
+}
